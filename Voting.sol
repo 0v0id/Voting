@@ -59,7 +59,7 @@ contract Voting is Ownable {
      * To handle ties.
      * 
      * If there are many more Voters than Proposals, ties are very unlikely to happen.
-     * Here ties are handled by starting with a new voting session between the tie Proposals only.
+     * Here ties are handled by starting a new voting session between the tie Proposals only.
      * Thus, the WorkflowStatus is rewinded to VotingSessionStarted.
     **/
     uint[] private _winningProposalIds;
